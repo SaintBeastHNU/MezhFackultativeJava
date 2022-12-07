@@ -10,9 +10,14 @@ public class Defender extends Warrior{
     }
 
     @Override
-    public void getDamage(Warrior warrior) {
-        if(warrior.getAttack() > DEFENCE){
-            setHealth(getHealth() - (warrior.getAttack() - DEFENCE));
+    public int getAttack() {
+        return ATTACK;
+    }
+
+    @Override
+    public void getDamage(int damage) {
+        if(damage > DEFENCE){
+            setHealth(getHealth() - (damage - DEFENCE));
         }
     }
 
