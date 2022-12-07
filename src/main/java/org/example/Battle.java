@@ -1,13 +1,13 @@
 package org.example;
 
-import org.example.Characters.Warrior;
+import org.example.сharacters.Warrior;
 
 public class Battle {
     public static boolean fight(Warrior w1, Warrior w2) {
         while(w1.isAlive() && w2.isAlive()) {
-            w2.getDamage(w1);
+            w1.dealDamage(w2);
             if(w2.isAlive()) {
-                w1.setHealth(w1.getHealth() - w2.getAttack());
+                w2.dealDamage(w1);
             }
         }
         return w1.isAlive();

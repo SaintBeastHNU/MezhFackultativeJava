@@ -1,4 +1,4 @@
-package org.example.Characters;
+package org.example.сharacters;
 
 public class Lancer extends Warrior{
     private static final int HP = 50;

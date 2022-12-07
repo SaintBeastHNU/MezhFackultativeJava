@@ -1,6 +1,6 @@
 package org.example;
 
-import org.example.Characters.Warrior;
+import org.example.сharacters.Warrior;
 
 import java.util.LinkedList;
 import java.util.Objects;
@@ -14,6 +14,11 @@ public class Army {
         army = new LinkedList<>();
     }
     public void addUnits(Warrior warrior) {
+        warrior.setNextWarrior(army.peekLast());
+        if (isLastWarrior(army.peekLast())) {
+            army.peekLast().setWarriorBehind(warrior);
+        }
+
         army.add(warrior);
     }
     public void addUnits(Supplier<Warrior> army, int count) {
@@ -33,5 +38,8 @@ public class Army {
         return true;
     }
 
+    private boolean isLastWarrior(Warrior warrior){
+        return warrior != null;
+    }
 
 }

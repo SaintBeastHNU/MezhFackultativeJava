@@ -1,4 +1,4 @@
-package org.example.Characters;
+package org.example.сharacters;
 
 public class Knight extends Warrior {
 

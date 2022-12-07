@@ -1,4 +1,4 @@
-package org.example.Characters;
+package org.example.сharacters;
 
 public class Vampire extends Warrior{
     private static final int ATTACK = 4;

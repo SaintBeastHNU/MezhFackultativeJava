@@ -1,8 +1,8 @@
 package org.example;
 
-import org.example.Characters.Defender;
-import org.example.Characters.Knight;
-import org.example.Characters.Warrior;
+import org.example.сharacters.Defender;
+import org.example.сharacters.Knight;
+import org.example.сharacters.Warrior;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -50,4 +50,5 @@ public class DefenderTest {
         assertFalse(Battle.fight(myArmy, enemyArmy));
         assertTrue(Battle.fight(army3, army4));
     }
+
 }
